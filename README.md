@@ -32,6 +32,25 @@
  Grading: I) presentation (0-4 points); II) task solution, program, project report (0-14 points).
  
  
+ ## Important Links 
+ 
+ [Deep Learning for the Precise Peak Detection in High-Resolution LC–MS Data](https://pubs.acs.org/doi/10.1021/acs.analchem.9b04811)
+ 
+ [Peak Prediction Using Multi Layer Perceptron(MLP) for Edge Computing ASICs Targeting Scientific](https://youtu.be/7uKW190YGBA)
+ 
+ [Getting Started with Neural Networks Using MATLAB](https://de.mathworks.com/videos/getting-started-with-neural-networks-using-matlab-1591081815576.html)
+ 
+ [MATLAB Code of Artificial Neural Networks Estimation](https://www.researchgate.net/publication/292970981_MATLAB_Code_of_Artificial_Neural_Networks_Estimation)
+ 
+ [Neural network models](https://scikit-learn.org/stable/modules/neural_networks_supervised.html)
+ 
+ [Python Scipy signal.find_peaks() -- A Helpful Guide](https://youtu.be/75mdKyA76i8)
+ 
+ [Tobias-Fechner/yr5-computational-intelligence](https://github.com/Tobias-Fechner/yr5-computational-intelligence)
+ 
+ [Peak detection algorithm in Python](https://stackoverflow.com/questions/50756793/peak-detection-algorithm-in-python)
+ 
+ 
 
 
   
