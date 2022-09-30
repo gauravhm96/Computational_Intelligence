@@ -109,14 +109,21 @@ def predict_peek_duration(input_data_file,row_number):
     print("\ninitialpeakdetect:\n",peakdetects[0])
     print("\nlastpeakdetect:\n",peakdetects[-1])
     print("\nPulse Duration(msec) :\n",peakdetects[-1] - peakdetects[0])
-
+    
+    Initialpeakdetect = "{:.2f}".format(peakdetects[0])
+    Lastpeakdetect = "{:.2f}".format(peakdetects[-1])
+    PulseDuration = "{:.2f}".format(peakdetects[-1] - peakdetects[0])
+    final_str = "Initialpeakdetect: "+Initialpeakdetect+"\n"+"Lastpeakdetect: "+Lastpeakdetect+"\n"+"Pulse Duration(msec): "+PulseDuration
     root= tk.Tk() 
     # Visualize locations in the chromatogram
     fig, ax = plt.subplots(1, 1, figsize=(14, 6))
     bar1 = FigureCanvasTkAgg(fig, root)
     bar1.get_tk_widget().pack(side=tk.LEFT, fill=tk.BOTH)
     ax.plot(t, s)
-
+    ax.text(0.8, 1, final_str, transform=ax.transAxes, fontsize = 10, 
+         bbox = dict(facecolor = 'yellow', alpha = 0.2))
+    
+    
     for (prob, loc, area) in zip(probs, locs, areas):
         y = s.min() - s.max() * 0.05 # location of the triangles
         ax.scatter(loc*t.max(), y, color='C1', marker='^', s=100, edgecolors='black')
